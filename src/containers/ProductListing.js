@@ -5,13 +5,13 @@ import ProductComponent from "./ProductComponent";
 
 const ProductListing = () => {
   const products = useSelector((state) => state);
-  const fetchProducts = () => {
-    const response = axios
-      .get("'https://fakestoreapi.com/products")
+  const fetchProducts = async () => {
+    const response = await axios
+      .get("https://fakestoreapi.com/products")
       .catch((err) => {
         console.log("Error Occured", err);
       });
-    console.log(response.data);
+    console.log(response);
   };
 
   useEffect(() => {

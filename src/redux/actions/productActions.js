@@ -1,6 +1,7 @@
 import { ActionTypes } from "../constants/action-types";
 
 export const setProducts = (products) => {
+  const dispatch = useDispatch();
   return {
     type: ActionTypes.SET_PRODUCTS,
     payload: products,
