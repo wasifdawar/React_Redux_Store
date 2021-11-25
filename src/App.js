@@ -8,6 +8,7 @@ function App() {
     <div className="App">
       <Router>
         <Header />
+        <br/>
         <Switch>
           <Route path="/" exact component={ProductListing} />
           <Route path="/product/:productId" exact component={ProductDetail} />

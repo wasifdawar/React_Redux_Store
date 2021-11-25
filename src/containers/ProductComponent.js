@@ -11,7 +11,7 @@ const ProductComponent = () => {
         <Link to={`/product/${id}`}>
           <div className="ui link cards">
             <div className="card">
-              <div className="image">
+              <div className="image" width="100px" height="100px">
                 <img src={image} alt="{title}" />
               </div>
               <div className="content">
